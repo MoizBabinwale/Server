@@ -4,7 +4,7 @@ const postSchema = mongoose.Schema({
   title: String, // add a title field
   tags: String, // add a description field
   image: String,
-  // userPosted: { type: String, required: "Post must have an author"},
+  userPosted: { type: String, required: "Post must have an author" },
   // userId: { type: String},
   createdAt: {
     type: Date,

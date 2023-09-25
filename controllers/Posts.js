@@ -1,11 +1,12 @@
 import Post from '../models/Posts.js';
 import mongoose from 'mongoose';
 export const postImage = async (req, res) => {
-  const { title, tags, base64 } = req.body;
+  const { title, tags, base64, userPosted } = req.body;
   const post = new Post({
     title,
     tags,
     image: base64,
+    userPosted
   });
 
   try {
